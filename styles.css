@@ -19,6 +19,7 @@ button {
 }
 
 html {
+    color: black;
     background-color: white;
 }
 
@@ -32,6 +33,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000;
     background-color: rgb(0, 0, 41);
 }
 
@@ -121,7 +123,7 @@ html {
 #about .social_div a {
     color: black;
     font-size: 1.5rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 #about .right {
@@ -214,6 +216,11 @@ html {
     /* background-color: white; */
 }
 
+#projects .projects_container .project:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
 #projects .projects_container .project img {
     height: 30vh;
     width: 100%;
@@ -286,12 +293,12 @@ html {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    border: 0.1rem solid lightgrey;
+    border: 0.1rem solid #244d61;
     border-radius: 0.3rem;
 }
 
 #contact .contact_form input:focus, #contact .contact_form textarea:focus {
-    border: 0.1rem solid purple;
+    border: 0.1rem solid #0295a9;
 }
 
 #contact .contact_form textarea {
@@ -304,13 +311,13 @@ html {
     padding: 0.7rem 1.5rem;
     color: white;
     font-size: 1rem;
-    border: 0.1rem solid purple;
+    border: 0.1rem solid #244d61;
     border-radius: 0.3rem;
-    background-color: purple;
+    background-color: #244d61;
 }
 
 #contact .contact_form button:hover {
-    color: purple;
+    color: #244d61;
     background-color: white;
     transition: all 0.2s ease-in-out;
 }
