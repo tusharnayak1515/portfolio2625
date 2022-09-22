@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Josefin+Sans&family=Lora&family=Mukta&family=Noto+Serif&family=Playfair+Display&family=Rubik&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +24,10 @@ html {
     background-color: white;
 }
 
+.header {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 /* Navbar Section */
 
 #navbar {
@@ -45,6 +50,7 @@ html {
 
 #navbar .logo h2 {
     color: white;
+    font-family: 'EB Garamond', serif;
 }
 
 #navbar .logo i {
@@ -62,6 +68,7 @@ html {
     margin: 0 1rem;
     color: white;
     font-size: 1.2rem;
+    font-family: 'Mukta', sans-serif;
 }
 
 #navbar .menu a:hover {
@@ -109,11 +116,13 @@ html {
 
 #about .left h1 {
     margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
 }
 
 #about .left h3 {
     width: 100%;
     margin-bottom: 1rem;
+    font-family: 'Rubik', sans-serif;
     font-weight: normal;
     display: flex;
     flex-wrap: wrap;
@@ -169,6 +178,7 @@ html {
 }
 
 #skills .skills_container .skill_item {
+    font-family: 'Lora', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,10 +239,10 @@ html {
 }
 
 #projects .projects_container .project .project_name {
-    /* height: 7vh; */
     width: 100%;
     padding: 1rem;
     text-align: center;
+    font-family: 'Lora', serif;
     /* background-color: orange; */
 }
 
@@ -285,7 +295,8 @@ html {
 }
 
 #contact .contact_form label {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
     margin-right: 1rem;
 }
 
@@ -293,6 +304,7 @@ html {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1rem;
+    font-family: 'Noto Serif', serif;
     border: 0.1rem solid #244d61;
     border-radius: 0.3rem;
 }
@@ -311,6 +323,7 @@ html {
     padding: 0.7rem 1.5rem;
     color: white;
     font-size: 1rem;
+    font-family: 'Lora', serif;
     border: 0.1rem solid #244d61;
     border-radius: 0.3rem;
     background-color: #244d61;
@@ -330,6 +343,7 @@ html {
     padding: 1rem 2rem;
     color: white;
     font-size: 1.3rem;
+    font-family: 'EB Garamond', serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
