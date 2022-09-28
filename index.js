@@ -23,6 +23,9 @@ submit_btn.addEventListener("click", (e)=> {
     e.preventDefault();
     const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
     if(name_input.value.trim().length > 0 && emailRegex.test(email.value) && message.value.trim().length > 0) {
+        name_input.style.border = "0.1rem solid #244d61";
+        email.style.border = "0.1rem solid #244d61";
+        message.style.border = "0.1rem solid #244d61";
         alert("Message sent successfully!");
         name_input.value = "";
         email.value = "";
@@ -30,13 +33,16 @@ submit_btn.addEventListener("click", (e)=> {
     }
     else {
         if(name_input.value.trim().length <= 0) {
-            alert("Name cannot be empty!");
+            name_input.style.border = "0.1rem solid red";
         }
         else if(!emailRegex.test(email.value)) {
-            alert("Enter a valid email!");
+            name_input.style.border = "0.1rem solid #244d61";
+            email.style.border = "0.1rem solid red";
         }
         else {
-            alert("Message cannot be empty!");
+            name_input.style.border = "0.1rem solid #244d61";
+            email.style.border = "0.1rem solid #244d61";
+            message.style.border = "0.1rem solid red";
         }
     }
 });
